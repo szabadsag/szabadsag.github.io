@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>CMS-内容管理系统 | szabadság</title>
+  <title>Java SE 1st. Day | szabadság</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、前期准备1.创建Web动态项目​	将整个项目按照Maven的约定进行改造 ​		a.删除META-INF和src文件夹 ​		b.创建4个resources文件夹 ​				-|src&#x2F;main&#x2F;java ​				-|src&#x2F;main&#x2F;resources ​				-|src&#x2F;test&#x2F;java ​				-|src&#x2F;te">
+  <meta name="description" content="​	今天开始，我将对Java的相关知识做总结并发布我的个人博客。 ​	在写第一篇的总结之前，我想把最重要的也是怎么才能学好Java的东西放在最前面：冰冻三尺，非一日之寒。学习Java最重要的就是心态，学习Java其实并不难，难的是在学习过程中一个好的心态(耐得住寂寞，踏实，戒骄戒躁，多敲，及时总结) 一、计算机基础知识1.计算机快捷键掌握好快捷键对一个计算机编程人员来说能起到事半功倍的效果，”工欲">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CMS-内容管理系统">
-<meta property="og:url" content="http://example.com/2022/05/04/CMS/index.html">
+<meta property="og:title" content="Java SE 1st. Day">
+<meta property="og:url" content="http://example.com/2022/12/12/Java-SE-1st-Day/index.html">
 <meta property="og:site_name" content="szabadság">
-<meta property="og:description" content="一、前期准备1.创建Web动态项目​	将整个项目按照Maven的约定进行改造 ​		a.删除META-INF和src文件夹 ​		b.创建4个resources文件夹 ​				-|src&#x2F;main&#x2F;java ​				-|src&#x2F;main&#x2F;resources ​				-|src&#x2F;test&#x2F;java ​				-|src&#x2F;te">
+<meta property="og:description" content="​	今天开始，我将对Java的相关知识做总结并发布我的个人博客。 ​	在写第一篇的总结之前，我想把最重要的也是怎么才能学好Java的东西放在最前面：冰冻三尺，非一日之寒。学习Java最重要的就是心态，学习Java其实并不难，难的是在学习过程中一个好的心态(耐得住寂寞，踏实，戒骄戒躁，多敲，及时总结) 一、计算机基础知识1.计算机快捷键掌握好快捷键对一个计算机编程人员来说能起到事半功倍的效果，”工欲">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-05-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-04T02:35:37.098Z">
+<meta property="article:published_time" content="2022-12-12T13:58:25.000Z">
+<meta property="article:modified_time" content="2022-12-12T14:32:17.692Z">
 <meta property="article:author" content="szabadság">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="szabadság" type="application/atom+xml">
@@ -164,295 +165,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CMS" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java-SE-1st-Day" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CMS-内容管理系统
+      Java SE 1st. Day
     </h1>
   
 
         
-        <a href="/2022/05/04/CMS/" class="archive-article-date">
-  	<time datetime="2022-05-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-04</time>
+        <a href="/2022/12/12/Java-SE-1st-Day/" class="archive-article-date">
+  	<time datetime="2022-12-12T13:58:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-12-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="一、前期准备"><a href="#一、前期准备" class="headerlink" title="一、前期准备"></a>一、前期准备</h5><h6 id="1-创建Web动态项目"><a href="#1-创建Web动态项目" class="headerlink" title="1.创建Web动态项目"></a>1.创建Web动态项目</h6><p>​	将整个项目按照Maven的约定进行改造</p>
-<p>​		a.删除META-INF和src文件夹</p>
-<p>​		b.创建4个resources文件夹</p>
-<p>​				-|src&#x2F;main&#x2F;java</p>
-<p>​				-|src&#x2F;main&#x2F;resources</p>
-<p>​				-|src&#x2F;test&#x2F;java</p>
-<p>​				-|src&#x2F;test&#x2F;resources</p>
-<p>​		c.将原先的webapp文件夹拖到src中的main文件夹中</p>
-<h6 id="2-导包"><a href="#2-导包" class="headerlink" title="2.导包"></a>2.导包</h6><h6 id="3-建库建表"><a href="#3-建库建表" class="headerlink" title="3.建库建表"></a>3.建库建表</h6><h6 id="4-按照三层架构进行编写"><a href="#4-按照三层架构进行编写" class="headerlink" title="4.按照三层架构进行编写"></a>4.按照三层架构进行编写</h6><p>​	三层架构:持久层、业务层、表现层</p>
-<p>​		a.根据数据库的数据表编写domain</p>
-<p>​		b.编写mapper(代替dao层)</p>
-<p>​				-|在mapper包里编写mapper接口</p>
-<p>​				-|在resources中创建一个和mapper接口一样的包,并在此包中创建一个和mapper接口名字相同的xml文件,在此文件中编写MyBatis</p>
-<p>​		c.编写service层的接口</p>
-<p>​				-|编写IXxxService接口</p>
-<p>​				-|编写XxxServiceImpl</p>
-<p>​				(注意:Service实现类要在类上加注解@Service)</p>
-<p>​		d.准备jdbc.properties和log4j.properties</p>
-<p>jdbc.properties</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#驱动</span></span><br><span class="line"><span class="attr">jdbc.driverClassName</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="comment">#url</span></span><br><span class="line"><span class="attr">jdbc.url</span>=<span class="string">jdbc:mysql:///cms</span></span><br><span class="line"><span class="comment">#用户名</span></span><br><span class="line"><span class="attr">jdbc.username</span>=<span class="string">root</span></span><br><span class="line"><span class="comment">#密码</span></span><br><span class="line"><span class="attr">jdbc.password</span>=<span class="string">123456</span></span><br></pre></td></tr></table></figure>
+        <p>​	今天开始，我将对Java的相关知识做总结并发布我的个人博客。</p>
+<p>​	在写第一篇的总结之前，我想把最重要的也是怎么才能学好Java的东西放在最前面：冰冻三尺，非一日之寒。学习Java最重要的就是心态，学习Java其实并不难，难的是在学习过程中一个好的心态(<strong>耐得住寂寞，踏实，戒骄戒躁，多敲，及时总结</strong>)</p>
+<h1 id="一、计算机基础知识"><a href="#一、计算机基础知识" class="headerlink" title="一、计算机基础知识"></a>一、计算机基础知识</h1><h2 id="1-计算机快捷键"><a href="#1-计算机快捷键" class="headerlink" title="1.计算机快捷键"></a>1.计算机快捷键</h2><p>掌握好快捷键对一个计算机编程人员来说能起到事半功倍的效果，”<strong>工欲善其事必先利其器</strong>“。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">撤销 Ctrl + Z</span><br><span class="line">反撤销 Ctrl + Y</span><br><span class="line">缩进 Tab键</span><br><span class="line">反缩进 Tab + shift</span><br><span class="line">打开我的电脑 Windows + E</span><br><span class="line">回到桌面 Windows + D</span><br><span class="line">快速锁屏 Windows + L</span><br></pre></td></tr></table></figure>
 
-<p>注:jdbc.url&#x3D;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;cms和jdbc.url&#x3D;jdbc:mysql:&#x2F;&#x2F;&#x2F;cms一样</p>
-<p>log4j.properties</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##日志框架等级  trace&lt;debug &lt;info &lt;warn&lt;Error</span></span><br><span class="line"><span class="attr">log4j.rootLogger</span> = <span class="string">ERROR,stdout</span></span><br><span class="line"><span class="comment">##打印指定的位置,日志等级为trace  只会打印大于等于trace等级的日志信息</span></span><br><span class="line"><span class="attr">log4j.logger.cn.szabadsag</span>=<span class="string">trace</span></span><br><span class="line"><span class="comment">### 输出信息到控制抬 ###</span></span><br><span class="line"><span class="attr">log4j.appender.stdout</span> = <span class="string">org.apache.log4j.ConsoleAppender</span></span><br><span class="line"><span class="comment">##输出目标,底层是用System.out来打印的</span></span><br><span class="line"><span class="attr">log4j.appender.stdout.Target</span> = <span class="string">System.out</span></span><br><span class="line"><span class="comment">##打印日志信息(按照我指定的格式打印)</span></span><br><span class="line"><span class="attr">log4j.appender.stdout.layout</span> = <span class="string">org.apache.log4j.PatternLayout</span></span><br><span class="line"><span class="comment">##日志信息具体格式的申明 trace</span></span><br><span class="line"><span class="attr">log4j.appender.stdout.layout.ConversionPattern</span> = <span class="string">%d %p [%c] - %m%n</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="5-Spring集成MyBatis"><a href="#5-Spring集成MyBatis" class="headerlink" title="5.Spring集成MyBatis"></a>5.Spring集成MyBatis</h6><p><em><strong>applicationContext.xml</strong></em></p>
-<p>​		 在Spring API文档中:核心技术–&gt;基本原理–&gt;容器–&gt;配置元数据–&gt;找到(基于XML的配置元数据的基本结构)(需要在schema约束中加上xmlns:context&#x3D;”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/context%E6%89%8D%E8%83%BD%E4%BD%BF%E7%94%A8context%E6%A0%87%E7%AD%BE">http://www.springframework.org/schema/context才能使用context标签</a>)</p>
-<p>​			a.扫描service层&lt;context:component-scan &#x2F;&gt;</p>
-<p>​			b.引入jdbc配置文件&lt;context:…placehloder… &#x2F;&gt;	classpath:jdbc.properties</p>
-<p>​			c.配置数据库连接池对象<em><strong>BasicDataSource</strong></em></p>
-<p>​						-|数据库连接四大金刚</p>
-<p>​			d.配置sqlSession核心对象<em><strong>SqlSessionFactoryBean</strong></em></p>
-<p>​						-|引入外部依赖(数据库连接对象)	注意:ref</p>
-<p>​						-|取别名(给domain中的每一个实体取别名,默认是实体类的类名)</p>
-<p>​						-|指向*Mapper.xml的位置	注意:classpath:cn&#x2F;xxx&#x2F;mapper&#x2F;*Mapper.xml</p>
-<p>​			e.配置mapper接口管理对象<em><strong>MapperScannerConfigurer</strong></em></p>
-<h6 id="6-测试Spring集成MyBatis"><a href="#6-测试Spring集成MyBatis" class="headerlink" title="6.测试Spring集成MyBatis"></a>6.测试Spring集成MyBatis</h6><p>​	-|先编写JUnit方法@Test</p>
-<p>​	-|再编写Spring测试方法</p>
-<p>​			@RunWith(SpringJUnit4ClassRunner.class)</p>
-<p>​			@ContextConfiguration(“classpath:applicationContext.xml”)</p>
-<h6 id="7-Spring集成SpringMVC前期准备"><a href="#7-Spring集成SpringMVC前期准备" class="headerlink" title="7.Spring集成SpringMVC前期准备"></a>7.Spring集成SpringMVC前期准备</h6><p>​		a.在webapp下的WEB-INF下创建一个views文件夹,在views文件夹下创建一个后台的文件夹system用来放后台的index.jsp页面,在system文件夹下创建一个article文件夹用来放article.jsp页面</p>
-<p>​		b.将资料中的html文件改成jsp文件:创建一个jsp页面,去掉jsp页面除了第一行的代码,然后复制html中的代码到jsp页面中</p>
-<p>​		c.在webapp下创建一个static文件夹专门用来放静态资源,在static创建一个system文件夹专门用来放后台的静态资源</p>
-<h6 id="8-编写controller"><a href="#8-编写controller" class="headerlink" title="8.编写controller"></a>8.编写controller</h6><p>​		Controller层的每一个类都要加上@Controller</p>
-<p>​			-|SystemController	此类是专门用来写后台公共代码的(如:跳转index.jsp)</p>
-<p>​			-|XxxController	此类专门用来写表现层的其它接口的跳转</p>
-<h6 id="9-编写SpringMVC配置文件"><a href="#9-编写SpringMVC配置文件" class="headerlink" title="9.编写SpringMVC配置文件"></a>9.编写SpringMVC配置文件</h6><p><em><strong>applicationContext-mvc.xml</strong></em></p>
-<p>​		在schema约束中加上xmlns:mvc&#x3D;”<a target="_blank" rel="noopener" href="http://www.springframework.org/schema/mvc%E6%89%8D%E8%83%BD%E4%BD%BF%E7%94%A8mvc%E6%A0%87%E7%AD%BE">http://www.springframework.org/schema/mvc才能使用mvc标签</a></p>
-<p>​			a.扫描controller层&lt;context:component-scan &#x2F;&gt;</p>
-<p>​			b.开启静态资源放行<em><strong>&lt;mvc:default-servlet-handler&#x2F;&gt;</strong></em>	开启静态资源放行会导致注解失效</p>
-<p>​			c.开启注解支持<em><strong>&lt;mvc:annotation-driven&#x2F;&gt;</strong></em></p>
-<p>​			d.配置视图解析器<em><strong>对象</strong></em> I*ViewR	配置视图解析器前缀后缀</p>
-<h6 id="10-编写web-xml"><a href="#10-编写web-xml" class="headerlink" title="10.编写web.xml"></a>10.编写web.xml</h6><p>在WEB-INF文件夹下创建web.xml配置文件</p>
-<p><em><strong>web.xml</strong></em></p>
-<p>​	在apache-tomcat-8.5.59&#x2F;conf文件夹下找到web.xml复制约束文件</p>
-<p>​	a.引入Spring核心配置文件applicationContext.xml</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入Spring核心配置文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">context-param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:applicationContext.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">context-param</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​	b.开启Spring容器</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 开启Spring容器 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">listener</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">listener-class</span>&gt;</span></span><br><span class="line">        org.springframework.web.context.ContextLoaderListener</span><br><span class="line">    <span class="tag">&lt;/<span class="name">listener-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">listener</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​	c.配置核心控制器</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 配置核心控制器 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>dispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet</span><br><span class="line">    <span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:applicationContext-mvc.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>1<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>dispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​	d.解决post请求的中文参数乱码问题</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 解决post请求的中文参数乱码问题 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>forceEncoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>true<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​		</p>
-<h6 id="11-测试Spring集成SpringMVC"><a href="#11-测试Spring集成SpringMVC" class="headerlink" title="11.测试Spring集成SpringMVC"></a>11.测试Spring集成SpringMVC</h6><p>a.部署项目</p>
-<p>​	打开apache-tomcat-8.5.59&#x2F;conf文件夹下的web.xml并拉到文件末尾如下:</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">		<span class="tag">&lt;<span class="name">Context</span> <span class="attr">docBase</span>=<span class="string">&quot;D:\javawebworkspace\Project1-CMS-01\src\main\webapp&quot;</span> <span class="attr">path</span>=<span class="string">&quot;&quot;</span> /&gt;</span>	</span><br><span class="line">      <span class="tag">&lt;/<span class="name">Host</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Engine</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">Service</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Server</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>b.启动tomcat服务器</p>
-<p>​	在谷歌或者火狐上输入<a target="_blank" rel="noopener" href="http://localhost:8080/system/index%E8%AE%BF%E9%97%AE%E5%90%8E%E5%8F%B0%E9%A6%96%E9%A1%B5">http://localhost:8080/system/index访问后台首页</a></p>
-<p>如果上述操作都完成,则表示SSM集成完毕.</p>
-<h5 id="二、后台后端业务功能的实现"><a href="#二、后台后端业务功能的实现" class="headerlink" title="二、后台后端业务功能的实现"></a>二、后台后端业务功能的实现</h5><h6 id="1-跳转到后台首页"><a href="#1-跳转到后台首页" class="headerlink" title="1.跳转到后台首页"></a>1.跳转到后台首页</h6><p>​			注意区分接口和页面;</p>
-<p>​			SystemController	后台后端公用的接口</p>
-<h6 id="2-跳转到后台文章首页"><a href="#2-跳转到后台文章首页" class="headerlink" title="2.跳转到后台文章首页"></a>2.跳转到后台文章首页</h6><p>​			ArticleController点击文章管理跳转到文章的首页</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul class=<span class="string">&quot;app-menu&quot;</span>&gt;</span><br><span class="line">    &lt;li&gt;</span><br><span class="line">        &lt;a class=<span class="string">&quot;app-menu__item active&quot;</span> href=<span class="string">&quot;/system/article/index&quot;</span>&gt;</span><br><span class="line">            &lt;i class=<span class="string">&quot;app-menu__icon fa fa-dashboard&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">            &lt;span class=<span class="string">&quot;app-menu__label&quot;</span>&gt;文章管理&lt;/span&gt;</span><br><span class="line">        &lt;/a&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-
-<p>分析:</p>
-<p>​	如上图jsp代码可知,我们做后台文章首页的跳转是通过a标签的超链接&#x2F;system&#x2F;article&#x2F;index,因此我们需要在表现层的ArticleController提供一个&#x2F;system&#x2F;article&#x2F;index接口</p>
-<h6 id="3-在文章页面展示数据"><a href="#3-在文章页面展示数据" class="headerlink" title="3.在文章页面展示数据"></a>3.在文章页面展示数据</h6><p>​			a.使用GM(GridManager)表格插件,该插件不支持IE浏览器;</p>
-<p>​			b.GM表格对返回值的格式有要求,必须返回两个数据totals和data(List&lt;T&gt;集合);</p>
-<p>​			c.使用GM的自定义模板;</p>
-<p>​			d.文章类型在业务层处理.</p>
-<h6 id="4-高级查询"><a href="#4-高级查询" class="headerlink" title="4.高级查询"></a>4.高级查询</h6><p>​			<strong>前端</strong>:</p>
-<p>​				a.给查询按钮绑定一个点击事件;</p>
-<p>​				b.获取用户输入的查询数据(使用serializeObject(),自动获取参数,但是需要导入jQuery的三个插件);</p>
-<p>​						自动获取参数可以使用jQuery扩展插件jquery.jdirk.js；注意：需要导入js</p>
-<p>​				c.使用GM的setQuery方法( 执行后将会自动刷新表格数据 )将数据提交到后台进行操作.</p>
-<p>​			<strong>后端</strong>:</p>
-<p>​				a.根据查询条件创建一个条件类(条件类的字段对应高级查询的字段);</p>
-<p>​				b.后台使用动态SQL实现高级查询;</p>
-<h6 id="5-文章列表分页展示"><a href="#5-文章列表分页展示" class="headerlink" title="5.文章列表分页展示"></a>5.文章列表分页展示</h6><p>​			<strong>分析:</strong></p>
-<p>​				前端需要后端返回两个数据:</p>
-<p>​													a.数据总条数;</p>
-<p>​													b.当前页页面需要的数据;</p>
-<p>​				后端需要前端传递到后端的两个数据:</p>
-<p>​													a.当前页页码currentPage;</p>
-<p>​													b.每页显示的条数pageSize;			</p>
-<p>​			<strong>前端</strong>:</p>
-<p>​				a.需要开启分页<em><strong>supportAjaxPage: true</strong></em>;</p>
-<p>​				b.配置每页显示条数的下拉项<em><strong>sizeData</strong></em>和配置初次进入时每页的显示条数<em><strong>pageSize</strong></em>(需要与sizeData中的值匹配);</p>
-<p>​				c.给请求参数的当前页和每页显示条数重命名<em><strong>currentPageKey:’currentPage’	pageSizeKey:’pageSize’</strong></em>;</p>
-<p>​			<strong>后端</strong>:</p>
-<p>​				a.提供一个公共查询条件类<strong>BaseQuery</strong>(封装公共查询条件:分页信息);</p>
-<p>​				b.封装私有查询条件:高级查询	ArticleQuery extends BaseQuery 使得ArticleQuery条件类也具有分页条件;</p>
-<p>​				c.在service层查询分页总条数,新建一个mapper方法findArticleCountByQuery;</p>
-<p>​				d.在BaseQuery类中提供一个get方法获取数据起始位置(this.currentPage - 1)*this.pageSize;</p>
-<p>​				e.在高级查询sql中进行分页处理limit #{begin},#{pageSize};</p>
-<h6 id="6-删除文章"><a href="#6-删除文章" class="headerlink" title="6.删除文章"></a>6.删除文章</h6><p>​		<strong>前端:</strong></p>
-<p>​				a.给删除按钮委派一个单击事件;</p>
-<p>​				b.弹出删除提示的模态框;</p>
-<p>​				c.获取被删除的文章的id;</p>
-<p>​					data-id&#x3D;’”+cell+”‘	$(this).data(“id”);</p>
-<p>​				d.清空模态框的确定按钮的所有事件,避免多次注册单击事件;</p>
-<p>​				e.给模态框的确定按钮绑定一个单击事件,发送get请求,如果删除成功就关闭模态框,刷新表格数据;</p>
-<p>​		<strong>后端:</strong></p>
-<p>​				a.提供一个AjaxResult用来返回操作提示;</p>
-<p>​				b.在controller层提供一个删除接口.</p>
-<h6 id="7-新增和修改文章"><a href="#7-新增和修改文章" class="headerlink" title="7.新增和修改文章"></a>7.新增和修改文章</h6><p>​		<strong>前端:</strong></p>
-<p>​				a.给新增或者修改按钮委派一个单击事件;</p>
-<p>​				b.清空模态框的表单数据;resetForm()不会清空默认值;</p>
-<p>​					resetForm()、clearForm()、ajaxSubmit()都是jquery-form.js插件的方法，需要引入相应的插件js</p>
-<p>​					setForm()是form-load.js插件的方法，所需需要导入相应的插件js</p>
-<p>​				注意:</p>
-<p>​						1.修改需要在bc之间进行回显数据:</p>
-<p>​															回显数据使用setForm(),所以需要把JS对象给JSON标准化JSON.stringify(row);</p>
-<p>​						2.在a标签外面必须是双引号，在拼接JSON数据的时候必须是单引号套双引号，这样才不会出现数据错误的情况</p>
-<p>​				c.手动清空隐藏域;</p>
-<p>​				d.弹出模态框;</p>
-<p>​				e.给模态框的确定按钮绑定一个单击事件;</p>
-<p>​				f.获取用户输入的数据;</p>
-<p>​				g.发送post请求,如果删除成功就关闭模态框,刷新表格数据;</p>
-<p>​		<strong>后端:</strong></p>
-<p>​				a.业务层提供一个新增或修改的接口;</p>
-<h6 id="8-抽取功能的静态资源"><a href="#8-抽取功能的静态资源" class="headerlink" title="8.抽取功能的静态资源"></a>8.抽取功能的静态资源</h6><p>​		抽取公共的JSP页面</p>
-<p>​		抽取公共的JS代码</p>
-<p>​			</p>
-<h5 id="三、前台后端业务功能实现"><a href="#三、前台后端业务功能实现" class="headerlink" title="三、前台后端业务功能实现"></a>三、前台后端业务功能实现</h5><h6 id="1-前台首页展示"><a href="#1-前台首页展示" class="headerlink" title="1.前台首页展示"></a>1.前台首页展示</h6><p>​	<strong>前端:</strong></p>
-<p>​		a.发送get请求,append追加数据;</p>
-<p>​	<strong>后端:</strong></p>
-<p>​		a.提供一个常量类Constatnt用来发文章类型的code;</p>
-<p>​		b.提供一个HomeMapper接口,在接口中提供一个根据code查询文章的方法;</p>
-<p>​		c.在HomeMapper.xml提供一个sql语句查询文章;</p>
-<p>​		d.提供一个IHomeService接口,在接口中提供一个返回值为List的方法;</p>
-<p>​		e.在HomeServiceImpl中实现接口中的方法,最后返回一个Map集合.</p>
-<h5 id="四、页面静态化技术"><a href="#四、页面静态化技术" class="headerlink" title="四、页面静态化技术"></a>四、页面静态化技术</h5><p>​	<strong>FreeMarker</strong></p>
-<p>​	导入freemarker.jar</p>
-<ol>
-<li>​	获取Configuration对象，为了获取模板对象(指定最新版本号)</li>
-<li>​	设置字符集setDefaultEncoding</li>
-<li>​	设置模板默认加载路径setDirectoryForTemplateLoading</li>
-<li>​	指定模板getTemplate</li>
-<li>​    生成静态页面process</li>
-</ol>
-<h5 id="五、静态页面的维护"><a href="#五、静态页面的维护" class="headerlink" title="五、静态页面的维护"></a>五、静态页面的维护</h5><h6 id="新增静态页面"><a href="#新增静态页面" class="headerlink" title="新增静态页面"></a>新增静态页面</h6><p>​	<strong>前端:</strong></p>
-<p>​			a.在webapp&#x2F;static文件夹下创建一个template模板文件夹用来放生成的静态页面;</p>
-<p>​			b.在template文件夹下创建一个article文件夹专门用来article.ftl模板;</p>
-<p>​			c.更改article.ftl中的标题内容,用EL表达式${title}</p>
-<p>​	<strong>后端:</strong></p>
-<p>​			a.抽取FreeMarkerUtil工具类,类中提供一个方法用来生成静态页面</p>
-<p>​					1.获取核心配置对象new Configuration(Configuration.最新版本);</p>
-<p>​					2.设置字符集configuration.setDefaultEncoding(“UTF-8”);</p>
-<p>​					3.设置模板路径configuration.setDirectoryForTemplateLoading(new File(“生成的静态文件的位置”));</p>
-<p>​					4.指定模板Template template &#x3D; configuration.getTemplate(“模板”);</p>
-<p>​					5.根据时间戳+”.”+文件后缀生成静态文件的url</p>
-<p>​								String url &#x3D; System.currentTimeMillis()+”.”+htmlSuffix;</p>
-<p>​					6.动态获取模板上下文路径</p>
-<p>​								String realPath &#x3D; req.getServletContext().getRealPath(“&#x2F;static&#x2F;template**&#x2F;**”);</p>
-<p>​					注意:一定要在template后加一个&#x2F;</p>
-<p>​					7.创建文件对象</p>
-<p>​								File file  &#x3D; new File(realPath,url);</p>
-<p>​					8.判断file对象的父文件夹是否存在,不存在则创建</p>
-<p>​								if(!file.getParentFile().exists()){</p>
-<p>​										file.getParentFile().mkdirs();</p>
-<p>​								}</p>
-<p>​					9.创建一个文件输出流对象</p>
-<p>​								FileWriter fileWriter &#x3D; new FileWriter(file);</p>
-<p>​					10.生成静态页面</p>
-<p>​								template.process(数据,fileWriter);</p>
-<p>​					11.返回一个文件名称</p>
-<p>​					注意:需要关闭输出流</p>
-<p>​			b.在service层新增的方法中进行业务处理</p>
-<p>​					1.在新增方法的参数列表中加一个req</p>
-<p>​					2.在方法中的操作</p>
-<p>​							2.1.动态获取模板上下文路径</p>
-<p>​										String realPath &#x3D; req.getServletContext().getRealPath(“&#x2F;static&#x2F;template&#x2F;article”);</p>
-<p>​							2.2.调用生成静态页面的方法</p>
-<p>​										FreeMarker.getHtmlUrl(realPath,”模板名称.ftl”,数据对象,文件后缀名);</p>
-<p>​							2.3.将生成的url设置到article对象中</p>
-<h6 id="修改静态页面"><a href="#修改静态页面" class="headerlink" title="修改静态页面"></a>修改静态页面</h6><p>​	思路:先删除原先的静态页面,再生成的新的静态页面,最后修改数据库的信息</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 修改</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">uptArticleById</span><span class="params">(Article article, HttpServletRequest req)</span> &#123;</span><br><span class="line">    <span class="comment">//	调用公共的删除静态页面的方法</span></span><br><span class="line">    <span class="built_in">this</span>.delHtmlUrl(article.getId(), req);</span><br><span class="line">    <span class="comment">//	调用公共的方法生成静态页面</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">addHtmlUrl</span> <span class="operator">=</span> <span class="built_in">this</span>.addHtmlUrl(article, req);</span><br><span class="line">    <span class="comment">//	将url设置到article对象中</span></span><br><span class="line">    article.setUrl(addHtmlUrl);</span><br><span class="line">    <span class="comment">//	修改数据库中的信息</span></span><br><span class="line">    articleMapper.uptArticleById(article);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="2-常用DOS命令"><a href="#2-常用DOS命令" class="headerlink" title="2.常用DOS命令"></a>2.常用DOS命令</h2><p>基础的DOS命令也是需要会的，毕竟我们使用的最多的就是Windows操作系统。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dir 查看当前目录有哪些文件或者文件夹</span><br><span class="line">cd 切换目录，比如：返回上一级目录cd ..，进入根目录cd /</span><br><span class="line">md 创建新的文件夹</span><br><span class="line">rd 删除文件夹</span><br><span class="line">echo .....&gt;A.txt 创建A.txt这个文件</span><br><span class="line">del 删除文件</span><br><span class="line">cls 清除屏幕</span><br><span class="line">help 命令帮助</span><br></pre></td></tr></table></figure>
 
 
 
-<h6 id="删除静态页面"><a href="#删除静态页面" class="headerlink" title="删除静态页面"></a>删除静态页面</h6><h6 id="实现点击次数"><a href="#实现点击次数" class="headerlink" title="实现点击次数"></a><strong>实现点击次数</strong></h6><p><strong>前端:</strong></p>
-<p>1.获取当前静态页面的href	location.href;</p>
-<p>2.获取url   href.substring(href.lastIndexOf(“&#x2F;“) + 1);</p>
-<p>3.发送get请求</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取到当前静态页面的访问地址</span></span><br><span class="line"><span class="keyword">var</span> href = location.<span class="property">href</span>;</span><br><span class="line"><span class="comment">// 截取获取到静态页面的名称</span></span><br><span class="line"><span class="keyword">var</span> url = href.<span class="title function_">substring</span>(href.<span class="title function_">lastIndexOf</span>(<span class="string">&quot;/&quot;</span>) + <span class="number">1</span>);</span><br><span class="line">$.<span class="title function_">get</span>(<span class="string">&quot;/home/getClickCountByUrl&quot;</span>,<span class="string">&quot;url=&quot;</span>+url,<span class="keyword">function</span>(<span class="params">result</span>)&#123;</span><br><span class="line">    <span class="comment">// 根据ID得到设置的span标签对象，设置它的文本值为点击次数</span></span><br><span class="line">    $(<span class="string">&quot;#clickCount&quot;</span>).<span class="title function_">html</span>(result.<span class="property">clickCount</span>);</span><br><span class="line">&#125;,<span class="string">&quot;json&quot;</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">b</span>&gt;</span>分类: <span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">b</span>&gt;</span>浏览: <span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;clickCount&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<p><strong>后端:</strong></p>
-<p>1.在HomeController中提供一个getClickCountByUrl方法,返回值为Article;</p>
-<p>2.在HomeServiceImpl中提供一个方法用来获取点击次数;</p>
-<p>3.在HomeMapper.xml提供一个sql:通过url获取文章信息;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 根据URL增加点击次数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> Article <span class="title function_">getClickCountByUrl</span><span class="params">(String url)</span> &#123;</span><br><span class="line">    <span class="comment">// 根据URL得到文章对象</span></span><br><span class="line">    <span class="type">Article</span> <span class="variable">article</span> <span class="operator">=</span> homeMapper.findArticleByUrl(url);</span><br><span class="line">    <span class="comment">// 给文章的点击次数+1</span></span><br><span class="line">    article.setClickCount(article.getClickCount() + <span class="number">1</span>);</span><br><span class="line">    <span class="comment">// 保存最新的点击次数</span></span><br><span class="line">    ArticleMapper.uptArticleById(article);</span><br><span class="line">    <span class="keyword">return</span> article;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="六、富文本编辑器"><a href="#六、富文本编辑器" class="headerlink" title="六、富文本编辑器"></a>六、富文本编辑器</h5><h6 id="UEditor使用步骤"><a href="#UEditor使用步骤" class="headerlink" title="UEditor使用步骤:"></a><strong>UEditor使用步骤:</strong></h6><h6 id="1-导包"><a href="#1-导包" class="headerlink" title="1.导包"></a>1.导包</h6><p>​	去官网下载UEditor,导入ueditor-1.1.2.jar,将UEditor的静态资源放在static文件夹下;</p>
-<h6 id="2-导入js"><a href="#2-导入js" class="headerlink" title="2.导入js"></a>2.导入js</h6><p>​	导入两个js核心配置文件,注意顺序不错</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 配置文件 --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;ueditor.config.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;!-- 编辑器源码文件 --&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;ueditor.all.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<h6 id="3-加载编辑器的容器"><a href="#3-加载编辑器的容器" class="headerlink" title="3.加载编辑器的容器"></a>3.加载编辑器的容器</h6><p>​	在你需要使用富文本编辑器的地方 <strong>加载编辑器的容器</strong> ,比如文章内容(textArea)需要使用富文本编辑器</p>
-<h6 id="4-实例化编辑器"><a href="#4-实例化编辑器" class="headerlink" title="4.实例化编辑器"></a>4.实例化编辑器</h6><p>​	在入口函数中<strong>实例化编辑器</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 实例化富文本编辑器 */</span></span><br><span class="line"><span class="keyword">var</span> ue = <span class="variable constant_">UE</span>.<span class="title function_">getEditor</span>(<span class="string">&#x27;container&#x27;</span>,&#123;</span><br><span class="line">    <span class="attr">initialFrameHeight</span>: <span class="number">200</span>,  <span class="comment">//调整初始化高度</span></span><br><span class="line">    <span class="attr">zIndex</span>: <span class="number">9999</span>			   <span class="comment">//显示的层次设置</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h6 id="5-新增"><a href="#5-新增" class="headerlink" title="5.新增"></a>5.新增</h6><p>​	在做新增时需要手动清空富文本编辑器中的内容</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 给新增按钮委派一个单击事件 */</span></span><br><span class="line">$(<span class="string">&quot;#table-demo-baseCode&quot;</span>).<span class="title function_">on</span>(<span class="string">&quot;click&quot;</span>,<span class="string">&quot;a[name=add]&quot;</span>,<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="comment">//	清空模态框的表单数据</span></span><br><span class="line">    $(<span class="string">&quot;#saveForm&quot;</span>).<span class="title function_">clearForm</span>();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//对编辑器的操作最好在编辑器ready之后再做</span></span><br><span class="line">    ue.<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="comment">//设置编辑器的内容</span></span><br><span class="line">        ue.<span class="title function_">setContent</span>(<span class="string">&#x27;&#x27;</span>);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//	手动清空隐藏域</span></span><br><span class="line">    $(<span class="string">&quot;input[type=hidden]&quot;</span>).<span class="title function_">val</span>(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    <span class="comment">//	弹出模态框</span></span><br><span class="line">    $(<span class="string">&quot;#saveModal&quot;</span>).<span class="title function_">modal</span>(<span class="string">&quot;show&quot;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h6 id="6-修改"><a href="#6-修改" class="headerlink" title="6.修改"></a>6.修改</h6><p>​	在做修改时需要手动回显富文本编辑器中的内容:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 给修改按钮委派一个单击事件 */</span></span><br><span class="line">$(<span class="string">&quot;#table-demo-baseCode&quot;</span>).<span class="title function_">on</span>(<span class="string">&quot;click&quot;</span>,<span class="string">&quot;a[name=upt]&quot;</span>,<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="comment">//	清空模态框的表单数据</span></span><br><span class="line">    $(<span class="string">&quot;#saveForm&quot;</span>).<span class="title function_">resetForm</span>();</span><br><span class="line">    <span class="comment">//	手动清空隐藏域</span></span><br><span class="line">    $(<span class="string">&quot;input[type=hidden]&quot;</span>).<span class="title function_">val</span>(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    <span class="comment">//	获取将被修改的数据</span></span><br><span class="line">    <span class="keyword">var</span> data = $(<span class="variable language_">this</span>).<span class="title function_">data</span>(<span class="string">&quot;row&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//	对编辑器的操作最好在编辑器ready之后再做</span></span><br><span class="line">    ue.<span class="title function_">ready</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="comment">//	设置编辑器的内容</span></span><br><span class="line">        ue.<span class="title function_">setContent</span>(data.<span class="property">content</span>);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//	回显数据</span></span><br><span class="line">    $(<span class="string">&quot;#saveForm&quot;</span>).<span class="title function_">setForm</span>(data);</span><br><span class="line">    <span class="comment">//	弹出模态框</span></span><br><span class="line">    $(<span class="string">&quot;#saveModal&quot;</span>).<span class="title function_">modal</span>(<span class="string">&quot;show&quot;</span>);	</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h5 id="七、轮播图模块"><a href="#七、轮播图模块" class="headerlink" title="七、轮播图模块"></a>七、轮播图模块</h5><p>如何快速开发一个模块:</p>
-<p>**前提:**即将被开发的模块已经存在有功能基本相似的模块;比如:此项目中的文章模块和轮播图模块;</p>
-<h6 id="1-轮播图新增"><a href="#1-轮播图新增" class="headerlink" title="1.轮播图新增"></a>1.轮播图新增</h6><p><strong>前端:</strong></p>
-<p>a.替换原先的文章新增或修改为 新增或修改的轮播图模态框,并且修改模态框表单的提交方式;</p>
-<p>b.必须使用jQuery插件的方法提交表单数据</p>
-<p>​	提交文件必须使用此种方法 ,它是通过表单提交路径进行数据提交</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 给新增或修改的模态框的确定按钮绑定一个单击事件 */</span></span><br><span class="line">$(<span class="string">&quot;#saveButton&quot;</span>).<span class="title function_">click</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="comment">//	获取用户输入的数据</span></span><br><span class="line">    <span class="keyword">var</span> data = $(<span class="string">&quot;#saveForm&quot;</span>).<span class="title function_">serialize</span>();</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">		//	发送post请求</span></span><br><span class="line"><span class="comment">		$.post(&quot;/system/article/addOrUptArticle&quot;,data,function(result)&#123;</span></span><br><span class="line"><span class="comment">			if(result.success)&#123;</span></span><br><span class="line"><span class="comment">				//	关闭模态框</span></span><br><span class="line"><span class="comment">				$(&quot;#saveModal&quot;).modal(&quot;hide&quot;);</span></span><br><span class="line"><span class="comment">				//	刷新表格数据,并跳转到第一页</span></span><br><span class="line"><span class="comment">				GridManager.refreshGrid(&quot;demo-baseCode&quot;,true);</span></span><br><span class="line"><span class="comment">			&#125;else &#123;</span></span><br><span class="line"><span class="comment">				//	提示用户</span></span><br><span class="line"><span class="comment">				alert(result.msg);</span></span><br><span class="line"><span class="comment">			&#125;</span></span><br><span class="line"><span class="comment">		&#125;,&quot;json&quot;);</span></span><br><span class="line"><span class="comment">		*/</span></span><br><span class="line">    <span class="comment">//	使用jQuery插件的方法提交表单数据	提交文件必须使用此种方法  它是通过表单提交路径进行数据提交</span></span><br><span class="line">    $(<span class="string">&quot;#saveForm&quot;</span>).<span class="title function_">ajaxSubmit</span>(&#123;</span><br><span class="line">        <span class="attr">success</span>:<span class="keyword">function</span>(<span class="params">result</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(result.<span class="property">success</span>)&#123;</span><br><span class="line">            <span class="comment">//	关闭模态框</span></span><br><span class="line">            $(<span class="string">&quot;#saveModal&quot;</span>).<span class="title function_">modal</span>(<span class="string">&quot;hide&quot;</span>);</span><br><span class="line">            <span class="comment">//	刷新表格数据,并跳转到第一页</span></span><br><span class="line">			<span class="title class_">GridManager</span>.<span class="title function_">refreshGrid</span>(<span class="string">&quot;demo-baseCode&quot;</span>,<span class="literal">true</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//	提示用户</span></span><br><span class="line">			<span class="title function_">alert</span>(result.<span class="property">msg</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 
-
-<p><strong>后端:</strong></p>
-<p>a.创建一个文件上传工具类UploadFiles,类中提供一个图片上传的静态方法uploadImgs;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 图片文件上传的静态方法</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> multipartFile	复杂表单对象</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> req	请求对象</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span>	图片文件名称</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">uploadImg</span><span class="params">(MultipartFile multipartFile, HttpServletRequest req)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (multipartFile != <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="type">InputStream</span> <span class="variable">inputStream</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="type">FileOutputStream</span> <span class="variable">fileOutputStream</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 1.获取文件后缀</span></span><br><span class="line">            <span class="type">String</span> <span class="variable">extension</span> <span class="operator">=</span> FilenameUtils.getExtension(multipartFile.getOriginalFilename());</span><br><span class="line">            <span class="comment">// 2.拼接文件名称</span></span><br><span class="line">            <span class="type">String</span> <span class="variable">fileName</span> <span class="operator">=</span> System.currentTimeMillis() + <span class="string">&quot;.&quot;</span> + extension;</span><br><span class="line">            <span class="comment">// 3.获取图片文件上传</span></span><br><span class="line">            <span class="type">String</span> <span class="variable">realPath</span> <span class="operator">=</span> req.getServletContext().getRealPath(<span class="string">&quot;/upload&quot;</span>);</span><br><span class="line">            <span class="comment">// 4.创建文件对象</span></span><br><span class="line">            <span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(realPath, fileName);</span><br><span class="line">            <span class="comment">// 5.判断文件对象的父文件夹是否存在</span></span><br><span class="line">            <span class="keyword">if</span> (!file.getParentFile().exists()) &#123;</span><br><span class="line">                <span class="comment">// 不存在就创建</span></span><br><span class="line">                file.getParentFile().mkdirs();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 6.创建输入流</span></span><br><span class="line">            inputStream = multipartFile.getInputStream();</span><br><span class="line">            <span class="comment">// 7.创建输出流</span></span><br><span class="line">            fileOutputStream = <span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(file);</span><br><span class="line">            <span class="comment">// 8.拷贝文件</span></span><br><span class="line">            IOUtils.copy(inputStream, fileOutputStream);</span><br><span class="line">            <span class="comment">// 9.返回图片名称</span></span><br><span class="line">            <span class="keyword">return</span> fileName;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (fileOutputStream != <span class="literal">null</span>) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    fileOutputStream.close();</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (inputStream != <span class="literal">null</span>) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    inputStream.close();</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>b.配置文件上传解析器</p>
-<p>​	注意:此id必须有,否则会报错;</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 配置文件上传解析器 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;multipartResolver&quot;</span> <span class="attr">class</span>=<span class="string">&quot;org.springframework.web.multipart.commons.CommonsMultipartResolver&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;maxUploadSize&quot;</span> <span class="attr">value</span>=<span class="string">&quot;10485760&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;defaultEncoding&quot;</span> <span class="attr">value</span>=<span class="string">&quot;UTF-8&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>c.在新增或修改的接口中接受一个复杂表单对象,</p>
-<p>​	<strong>并且复杂表单对象的变量名称必须和模态框表单的name字段一致</strong></p>
-<p>d.业务层处理</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 新增</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">addSlide</span><span class="params">(Slide slide, HttpServletRequest req, MultipartFile file)</span> &#123;</span><br><span class="line">    <span class="comment">//	调用图片文件上传方法</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">uploadImg</span> <span class="operator">=</span> UploadFiles.uploadImg(file, req);</span><br><span class="line">    <span class="comment">//	将图片名称设置到slide对象中</span></span><br><span class="line">    slide.setName(uploadImg);</span><br><span class="line">    <span class="comment">//	将图片路径设置到slide对象中</span></span><br><span class="line">    slide.setPath(<span class="string">&quot;/upload/&quot;</span>+uploadImg);</span><br><span class="line">    slideMapper.addSlide(slide);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="2-轮播图删除"><a href="#2-轮播图删除" class="headerlink" title="2.轮播图删除"></a>2.轮播图删除</h6><p>​	<strong>前端:</strong></p>
-<p>​	更改js中的删除轮播图请求路径</p>
-<p>​	<strong>后端:</strong></p>
-<p>​	在业务层删除轮播图,再将信息同步到数据库;</p>
-<h6 id="3-轮播图修改"><a href="#3-轮播图修改" class="headerlink" title="3.轮播图修改"></a>3.轮播图修改</h6><p>​	<strong>后端:</strong></p>
-<p>​	在复杂表单对象传递到业务层,判断文件是否存在,存在则删除,然后再重新添加轮播图</p>
-<h6 id="4-轮播图前台展示"><a href="#4-轮播图前台展示" class="headerlink" title="4.轮播图前台展示"></a><strong>4.轮播图前台展示</strong></h6><p>​	<strong>前端:</strong></p>
-<p>​		在页面轮播图对应位置删除原先写死的标签,在最近的入口函数中发起get请求查询启用的轮播图;</p>
-<p>​	<strong>后端:</strong></p>
-<p>​		根据前端的请求路径,创建一个接口,在业务层进行处理</p>
-<h5 id="八、登录实现"><a href="#八、登录实现" class="headerlink" title="八、登录实现"></a>八、登录实现</h5><h5 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h5><p>SpringMVC执行流程:<a target="_blank" rel="noopener" href="http://mp.ofweek.com/Internet/a856714066147">http://mp.ofweek.com/Internet/a856714066147</a></p>
-<p>执行流程简单分析</p>
-<p>（1） 浏览器提交请求到中央调度器</p>
-<p>（2） 中央调度器直接将请求转给处理器映射器。</p>
-<p>（3） 处理器映射器会根据请求，找到处理该请求的处理器，并将其封装为处理器执行链后返回给中央调度器。</p>
-<p>（4） 中央调度器根据处理器执行链中的处理器，找到能够执行该处理器的处理器适配器。</p>
-<p>（5） 处理器适配器调用执行处理器。</p>
-<p>（6） 处理器将处理结果及要跳转的视图封装到一个对象 ModelAndView 中，并将其返回给处理器适配器。</p>
-<p>（7） 处理器适配器直接将结果返回给中央调度器。</p>
-<p>（8） 中央调度器调用视图解析器，将 ModelAndView 中的视图名称封装为视图对象。</p>
-<p>（9） 视图解析器将封装了的视图对象返回给中央调度器</p>
-<p>（10） 中央调度器调用视图对象，让其自己进行渲染，即进行数据填充，形成响应对象。</p>
-<p>（11） 中央调度器响应浏览器。</p>
+<h1 id="二、Java基础知识"><a href="#二、Java基础知识" class="headerlink" title="二、Java基础知识"></a>二、Java基础知识</h1><h2 id="1-Java的版本"><a href="#1-Java的版本" class="headerlink" title="1.Java的版本"></a>1.Java的版本</h2><p>Java主要有三个版本</p>
+<p>Java SE，JDK1.5之前叫做J2SE；</p>
+<p>Java EE，JDK1.5之前叫做J2EE；Java企业级开发。</p>
+<p>Java ME，JDK1.5之前叫做J2ME；嵌入式开发等。</p>
+<h2 id="2-搭建Java环境"><a href="#2-搭建Java环境" class="headerlink" title="2.搭建Java环境"></a>2.搭建Java环境</h2><p>安装JDK，可以参照网上资料进行安装。</p>
 
       
 
@@ -492,6 +241,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -542,7 +302,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/05/04/CMS/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/12/12/Java-SE-1st-Day/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -556,15 +316,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/12/12/Java-SE-1st-Day/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Java SE 1st. Day
-        
-      </div>
-    </a>
   
+    <a href="/2022/05/04/CMS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CMS-内容管理系统</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
