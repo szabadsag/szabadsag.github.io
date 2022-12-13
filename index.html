@@ -162,6 +162,104 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Java-SE-2nd" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/12/13/Java-SE-2nd/">Java SE 2nd.</a>
+    </h1>
+  
+
+        
+        <a href="/2022/12/13/Java-SE-2nd/" class="archive-article-date">
+  	<time datetime="2022-12-13T02:12:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-12-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h2><h3 id="1-正斜杠与反斜杠"><a href="#1-正斜杠与反斜杠" class="headerlink" title="1.正斜杠与反斜杠"></a>1.正斜杠与反斜杠</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">反斜杠\在Java中具有转义作用。</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Java常识"><a href="#2-Java常识" class="headerlink" title="2.Java常识"></a>2.Java常识</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JDK1.0、 JDK1.1 、JDK1.2、JDK1.3 、JDK1.4 （在此之前都叫J2SE、J2EE、J2ME）Java5、Java6、Java7、Java8（主流JDK，市面上现在用的最多的）...</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Java专业术语"><a href="#3-Java专业术语" class="headerlink" title="3.Java专业术语"></a>3.Java专业术语</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">JDK（包含JRE和JVM、核心类库以及一些开发工具javac.exe等）</span><br><span class="line"></span><br><span class="line">JDK：Java Development Kit（Java开发工具包）</span><br><span class="line">JRE：Java Runtime Enviroment（Java运行时环境），它仅仅只能运行编译好的Java字节码文件。</span><br><span class="line">JVM：Java Virtual Machine（Java虚拟机），负责将Java源文件编译成字节码文件，实现Java&quot;（write once,run anywhere）一次编译,随处运行&quot;。</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-命令方式打开计算机应用"><a href="#4-命令方式打开计算机应用" class="headerlink" title="4.命令方式打开计算机应用"></a>4.命令方式打开计算机应用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">打开记事本win+R--&gt;notepad </span><br><span class="line"></span><br><span class="line">打开计算器win+R--&gt;calc</span><br><span class="line"></span><br><span class="line">打开画图工具win+R--&gt;mspaint</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-Tips"><a href="#5-Tips" class="headerlink" title="5.Tips"></a>5.Tips</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">有些网站的服务器在国外，因此使用谷歌浏览器打不开，根据我自身的经验建议一般计算机上安装除了Windows自带的微软浏览器（Microsoft Edge）外，还应该安装谷歌浏览器（Google）、火狐浏览器（FireFox，一款由国人开发的浏览器，非常友好[都是中文]）。</span><br><span class="line">​计算机操作系统(Windows、Linux、Andriod、IOS等)与计算机应用软件是存在兼容性问题的。</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、Java-SE入门"><a href="#二、Java-SE入门" class="headerlink" title="二、Java SE入门"></a>二、Java SE入门</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">绿色软件：解压即安装</span><br><span class="line">​用户变量配置只针对当前用户有作用，系统变量配置对此计算机所有用户都有作用。</span><br><span class="line">​配置环境变量的作用：在计算机任意目录都可以使用javac和java工具，而不仅仅是在jdk的bin目录下使用。</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-HelloWorld"><a href="#1-HelloWorld" class="headerlink" title="1.HelloWorld"></a>1.HelloWorld</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HelloWorld.java</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String args[])</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World!!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;    </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-基础知识"><a href="#2-基础知识" class="headerlink" title="2.基础知识"></a>2.基础知识</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Java源文件后缀为.java,字节码文件后缀为.class;</span><br><span class="line">​一个Java源文件可以文件名和类名不一致，但是源文件中的类不能有public修饰，可以看出，字节码的产生只和类有关；</span><br><span class="line">​Java源文件名必须和被public修饰的类名一致，且一个源文件中只能有一个类被public修饰；</span><br><span class="line">​main方法是一个程序的入口，一个类里面只能有一个main方法。</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-基本数据类型"><a href="#3-基本数据类型" class="headerlink" title="3.基本数据类型"></a>3.基本数据类型</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Java基本数据类型有4类8种：</span><br><span class="line">整数型	byte short int long</span><br><span class="line">浮点型	float double</span><br><span class="line">字符型 char</span><br><span class="line">布尔型 boolean</span><br></pre></td></tr></table></figure>
+
+<p>**tips:**除了基本数据类型其余都是引用数据类型，包括类、接口、数组等等。</p>
+<h3 id="4-多态"><a href="#4-多态" class="headerlink" title="4.多态"></a>4.多态</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">多态是Java的特点之一，多态的前提是两个类有继承。</span><br><span class="line">多态即一个类的多种形态，比如动物类有人这个子类，也有猴子等子类。</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Java SE</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/12/13/Java-SE-2nd/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Java-SE-1st-Day" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
